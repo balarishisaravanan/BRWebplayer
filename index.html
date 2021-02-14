@@ -9,19 +9,19 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <input
+      id="localVID"
+      name="localfile"
+      size="50"
+      maxlength="100000"
+      accept="video/*"
+      type="file"
+      onchange="playlocalVID()"
+    />
     <div class="videoPlayer">
       <video controls autoplay id="videoPlayer">
         <source id="currentVID" src="" type="video/mp4" />
       </video>
-      <input
-        id="localVID"
-        name="localfile"
-        size="50"
-        maxlength="100000"
-        accept="video/*"
-        type="file"
-        onchange="playlocalVID()"
-      />
     </div>
   </body>
 </html>
